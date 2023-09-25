@@ -1,28 +1,26 @@
 package kartyatrukkkonzolon;
 
-import kartyatrukkkonzolon.Lap;
-
 public class Pakli {
 
     String[] pakli = new String[22];
 
     public Pakli() {
-
+        feltolt();
     }
 
-    private void feltolt() {
+    void feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
-        int i = 1;
+        int j = 1;
         for (String szin : szinek) {
-            for (int e = 0; e < ertekek.length && i < pakli.length; e++) {
-                pakli[i++] = szin + "_" + ertekek[e];
+            for (int a = 0; a < ertekek.length && j < pakli.length; a++) {
+                pakli[j++] = szin + "_" + ertekek[a];
             }
         }
 
     }
 
-    private void kirak() {
+    void kirak() {
         for (int i = 1; i < pakli.length; i++) {
             System.out.printf("%-8s", pakli[i]);
             if (i % 3 == 0) {
@@ -31,7 +29,7 @@ public class Pakli {
         }
     }
 
-    private void kever(int oszlop) {
+    void kever(int oszlop) {
         // mindig középre a választott
         String[] ujPakli = new String[22];
         switch (oszlop) {
@@ -60,7 +58,11 @@ public class Pakli {
         pakli = ujPakli;
     }
 
-    private void ezVolt() {
+    void ezVolt() {
         System.out.println("A választott lap: " + pakli[11]);
+    }
+
+    void ezvolt() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
