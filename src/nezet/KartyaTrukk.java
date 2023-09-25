@@ -13,7 +13,7 @@ public class KartyaTrukk {
 
     }
 
-    private void inditas() {
+    public void inditas() {
         Pakli pakli = new Pakli();
 
         for (int i = 0; i < 3; i++) {

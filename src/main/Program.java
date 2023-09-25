@@ -1,13 +1,13 @@
 package main;
 
-
+import nezet.KartyaTrukk;
 
 public class Program {
 
 //   private static String[] pakli = new String[22];
 //    private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        
+
 //        feltolt();
 //        for (int i = 0; i < 3; i++) {
 //            kirak();
@@ -15,6 +15,8 @@ public class Program {
 //            kever(oszlop);
 //        }
 //        ezVolt();
+        KartyaTrukk jatek = new KartyaTrukk();
+        jatek.inditas();
     }
 
 //    private static void feltolt() {
@@ -77,6 +79,4 @@ public class Program {
 //    private static void ezVolt() {
 //        System.out.println("A választott lap: " + pakli[11]);
 //    }
-   
-
 }
