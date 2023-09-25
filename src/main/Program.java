@@ -1,8 +1,8 @@
-package kartyatrukkkonzolon;
+package main;
 
-import java.util.Scanner;
 
-public class KartyaTrukkKonzolon {
+
+public class Program {
 
 //   private static String[] pakli = new String[22];
 //    private static final Scanner sc = new Scanner(System.in);

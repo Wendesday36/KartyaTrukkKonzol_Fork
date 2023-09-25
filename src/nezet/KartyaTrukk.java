@@ -1,6 +1,7 @@
-package kartyatrukkkonzolon;
+package nezet;
 
 import java.util.Scanner;
+import modell.Pakli;
 
 public class KartyaTrukk {
 
@@ -32,10 +33,18 @@ public class KartyaTrukk {
         boolean jo;
         int oszlop;
         do {
-            System.out.print("melyik oszlop (1-3): ");
+            kiir("melyik oszlop (1-3): ");
             oszlop = sc.nextInt();
             jo = oszlop >= 1 && oszlop <= 3;
         } while (!jo);
         return oszlop;
+    }
+    public static void kiirkartya( String pakli){
+        System.out.printf("%-8s",pakli);
+        
+    }
+    public static void kiir(String szoveg){
+        System.out.println(szoveg);
+        
     }
 }
