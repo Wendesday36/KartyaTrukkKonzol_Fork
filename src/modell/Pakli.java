@@ -6,12 +6,13 @@ public class Pakli {
 
     String[] pakli = new String[22];
     KartyaTrukk szoveg = new KartyaTrukk();
+
     public Pakli() {
         feltolt();
     }
 
-  public  void feltolt() {
-      
+    public void feltolt() {
+
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
         int j = 1;
@@ -23,16 +24,16 @@ public class Pakli {
 
     }
 
-  public  void kirak() {
+    public void kirak() {
         for (int i = 1; i < pakli.length; i++) {
-            szoveg.kiirkartya( pakli[i]);
+            szoveg.kiirkartya(pakli[i]);
             if (i % 3 == 0) {
-                szoveg.kiir("");
+                szoveg.kiir("\n");
             }
         }
     }
 
-   public void kever(int oszlop) {
+    public void kever(int oszlop) {
         // mindig középre a választott
         String[] ujPakli = new String[22];
         switch (oszlop) {
@@ -61,9 +62,8 @@ public class Pakli {
         pakli = ujPakli;
     }
 
-  public  void ezVolt() {
+    public void ezVolt() {
         szoveg.kiir("A választott lap: " + pakli[11]);
     }
 
-   
 }

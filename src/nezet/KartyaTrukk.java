@@ -16,16 +16,13 @@ public class KartyaTrukk {
     private void inditas() {
         Pakli pakli = new Pakli();
 
-        //feltolt();
         for (int i = 0; i < 3; i++) {
             pakli.kirak();
             int oszlop = melyik();
             pakli.kever(oszlop);
 
-            //kever(oszlop);
         }
         pakli.ezVolt();
-        //ezVolt();
 
     }
 
@@ -39,12 +36,14 @@ public class KartyaTrukk {
         } while (!jo);
         return oszlop;
     }
-    public static void kiirkartya( String pakli){
-        System.out.printf("%-8s",pakli);
-        
+
+    public static void kiirkartya(String pakli) {
+        System.out.printf("%-8s", pakli);
+
     }
-    public static void kiir(String szoveg){
-        System.out.println(szoveg);
-        
+
+    public static void kiir(String szoveg) {
+        System.out.print(szoveg);
+
     }
 }
